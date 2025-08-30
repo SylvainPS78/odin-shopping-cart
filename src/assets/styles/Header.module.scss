@@ -51,5 +51,20 @@
       left: 10%;
       right: 10%;
     }
+
+    &:last-child::after {
+      display: none;
+      content: none;
+    }
+
+    svg {
+      color: $gold;
+      transition: transform $transition-slow;
+      transform: scale(1);
+
+      &:hover {
+        transform: scale(1.3);
+      }
+    }
   }
 }

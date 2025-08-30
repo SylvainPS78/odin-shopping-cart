@@ -53,4 +53,16 @@
   width: 80%;
   left: 10%;
   right: 10%;
+}
+.headerButton:last-child::after {
+  display: none;
+  content: none;
+}
+.headerButton svg {
+  color: #f7c873;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
+}
+.headerButton svg:hover {
+  transform: scale(1.3);
 }/*# sourceMappingURL=Header.module.css.map */
