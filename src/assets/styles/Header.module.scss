@@ -2,35 +2,54 @@
 @use "fonts";
 
 .header {
-  background-color: #234e70;
+  background-color: $black;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 2rem;
-}
+  padding: $spacing-sm;
 
-.logo {
-  width: 150px;
-  height: auto;
-}
+  &Logo {
+    width: 200px;
+    height: auto;
+  }
 
-.buttonsContainer {
-  display: flex;
-  gap: 1rem;
-}
+  &ButtonsContainer {
+    display: flex;
+    gap: $spacing-lg;
+    margin-right: $spacing-md;
+  }
 
-.button {
-  background: #f7c873;
-  color: #234e70;
-  border: none;
-  border-radius: 6px;
-  padding: 0.5rem 1.2rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-.button:hover {
-  background: green;
-  color: #fff;
+  &Button {
+    background-color: transparent;
+    color: $gold;
+    border: none;
+    font-family: $font-title;
+    font-size: $font-size-small;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    overflow: visible;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 10%;
+      right: 10%;
+      bottom: 0;
+      width: 0%;
+      height: 2px;
+      background: $gold;
+      transition:
+        width $transition-slow,
+        left $transition-slow,
+        right $transition-slow;
+      margin: 0 auto;
+    }
+
+    &:hover::after {
+      width: 80%;
+      left: 10%;
+      right: 10%;
+    }
+  }
 }

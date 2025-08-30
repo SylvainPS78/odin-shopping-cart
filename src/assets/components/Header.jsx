@@ -11,20 +11,20 @@ const Header = () => {
         alt="Chic & Shine logo"
         width={333}
         height={71}
-        className={styles.logo}
+        className={styles.headerLogo}
         loading="lazy"
       ></img>
-      <div className={styles.buttonsContainer}>
-        <button className={styles.button} id="button-home">
+      <div className={styles.headerButtonsContainer}>
+        <button className={styles.headerButton} id="button-home">
           HOME
         </button>
-        <button className={styles.button} id="button-product">
+        <button className={styles.headerButton} id="button-product">
           PRODUCT
         </button>
-        <button className={styles.button} id="button-about">
+        <button className={styles.headerButton} id="button-about">
           ABOUT
         </button>
-        <button className={styles.button} id="button-cart">
+        <button className={styles.headerButton} id="button-cart">
           CART
         </button>
       </div>

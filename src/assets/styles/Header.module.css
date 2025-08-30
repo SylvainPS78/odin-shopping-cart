@@ -11,36 +11,46 @@
   font-style: normal;
 }
 .header {
-  background-color: #234e70;
+  background-color: #000000;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 1rem;
 }
-
-.logo {
-  width: 150px;
+.headerLogo {
+  width: 200px;
   height: auto;
 }
-
-.buttonsContainer {
+.headerButtonsContainer {
   display: flex;
-  gap: 1rem;
+  gap: 4rem;
+  margin-right: 2rem;
 }
-
-.button {
-  background: #f7c873;
-  color: #234e70;
+.headerButton {
+  background-color: transparent;
+  color: #f7c873;
   border: none;
-  border-radius: 6px;
-  padding: 0.5rem 1.2rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: clamp(12px, 1.5vw + 0.375rem, 18.75px);
   font-weight: bold;
   cursor: pointer;
-  transition: background 0.2s;
+  position: relative;
+  overflow: visible;
 }
-
-.button:hover {
-  background: green;
-  color: #fff;
+.headerButton::after {
+  content: "";
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: #f7c873;
+  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1), left 0.5s cubic-bezier(0.4, 0, 0.2, 1), right 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0 auto;
+}
+.headerButton:hover::after {
+  width: 80%;
+  left: 10%;
+  right: 10%;
 }/*# sourceMappingURL=Header.module.css.map */
