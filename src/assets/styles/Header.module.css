@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../font/Rubik/Rubik-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.header {
+  background-color: #234e70;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+.buttonsContainer {
+  display: flex;
+  gap: 1rem;
+}
+
+.button {
+  background: #f7c873;
+  color: #234e70;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.button:hover {
+  background: green;
+  color: #fff;
+}/*# sourceMappingURL=Header.module.css.map */

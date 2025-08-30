@@ -1,10 +1,10 @@
 import "./assets/styles/App.css";
-import Footer from "./assets/components/Footer.jsx";
+import Header from "./assets/components/Header.jsx";
 
 function App() {
   return (
     <>
-      <Footer />
+      <Header />
     </>
   );
 }
