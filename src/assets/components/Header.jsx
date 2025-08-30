@@ -5,7 +5,6 @@ const Header = () => {
   return (
     <header className={styles.header} aria-label="Site Header">
       {" "}
-      {/* define role */}{" "}
       <img
         src={logoHeader}
         alt="Chic & Shine logo"
@@ -19,7 +18,7 @@ const Header = () => {
           HOME
         </button>
         <button className={styles.headerButton} id="button-product">
-          PRODUCT
+          PRODUCTS
         </button>
         <button className={styles.headerButton} id="button-about">
           ABOUT
