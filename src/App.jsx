@@ -1,12 +1,15 @@
+import { Outlet } from "react-router-dom";
 import "./assets/styles/App.css";
 import Header from "./assets/components/Header.jsx";
-import { Outlet } from "react-router-dom";
+import PageTransition from "./assets/components/PageTransition.jsx";
 
 function App() {
   return (
     <>
       <Header />
-      <Outlet />
+      <PageTransition>
+        <Outlet />
+      </PageTransition>
     </>
   );
 }
