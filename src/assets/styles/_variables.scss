@@ -5,19 +5,17 @@
 // Report modifications in colors.js
 
 // Colors - Primary Palette
-$primary-blue: #5367ff;
-$light-primary-blue: #7f8dfc;
+
+$deep-blue: #234e70; // Button background, main links
+$gold: #f7c873; // accents, buttons, icon, hover
 
 // Colors - Accent Palette
-$accent-red: #fa5757;
-$light-accent-red: #ff8787;
+$accent-red: #e94560; // error messages, critical actions, detele buttons
 
 // Colors - Neutral Palette
 $white: #ffffff;
 $black: #000000;
-$light-grey: #f0f0f0;
-$medium-grey: #9194a2;
-$dark-grey: #242940;
+$light-grey: #f2f2f2; //card background
 
 // Spacing Scale
 $spacing-xsm: 0.5rem; // 8px
@@ -26,8 +24,9 @@ $spacing-md: 2rem; // 32px
 $spacing-lg: 4rem; // 64px
 
 // Typography System
-$font-body: "Montserrat", Arial, sans-serif;
-$font-heading: "Rubik", Arial, sans-serif;
+$font-title: "Montserrat", Arial, sans-serif;
+$font-sub-title: "Rubik", Arial, sans-serif;
+$font-body: "Open Sans", Arial, sans-serif;
 
 // Fluid Typography Scale
 $font-size-extra-small: clamp(8px, 1vw + 0.25rem, 12.5px);
@@ -50,6 +49,6 @@ $z-index-modal: 100;
 $z-index-overlay: 1000;
 
 // Box Shadow Presets
-$shadow-light: 0 2px 8px rgba($dark-grey, 0.1);
-$shadow-medium: 0 4px 15px rgba($primary-blue, 0.3);
-$shadow-heavy: 0 8px 25px rgba($dark-grey, 0.2);
+$shadow-light: 0 2px 8px rgba($deep-blue, 0.1);
+$shadow-medium: 0 4px 15px rgba($deep-blue, 0.3);
+$shadow-heavy: 0 8px 25px rgba($deep-blue, 0.2);
