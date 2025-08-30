@@ -31,6 +31,10 @@
     position: relative;
     overflow: visible;
 
+    &:hover {
+      color: $gold;
+    }
+
     &::after {
       content: "";
       position: absolute;

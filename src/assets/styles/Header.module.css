@@ -38,6 +38,9 @@
   position: relative;
   overflow: visible;
 }
+.headerButton:hover {
+  color: #f7c873;
+}
 .headerButton::after {
   content: "";
   position: absolute;

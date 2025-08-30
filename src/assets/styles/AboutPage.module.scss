@@ -17,6 +17,7 @@
 }
 
 .link {
+  color: $white;
   transition: color $transition-slow;
   &:hover {
     color: $gold;
