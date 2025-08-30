@@ -1,13 +1,12 @@
 import "./assets/styles/App.css";
 import Header from "./assets/components/Header.jsx";
-import HomePage from "./assets/components/HomePage.jsx";
-import AboutPage from "./assets/components/AboutPage.jsx";
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
     <>
       <Header />
-      <AboutPage />
+      <Outlet />
     </>
   );
 }
