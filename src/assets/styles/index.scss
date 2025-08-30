@@ -34,8 +34,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.5;
   font-family: $font-body;
-  color: $dark-grey;
-  background-color: $primary-blue;
+  color: $white;
+  background-color: $deep-blue;
   font-weight: 400;
 }
 
@@ -47,7 +47,7 @@ h4,
 h5,
 h6 {
   text-wrap: balance;
-  color: $dark-grey;
+  color: $white;
   font-weight: 700;
   overflow-wrap: break-word;
 }
@@ -78,17 +78,17 @@ select {
 // Link elements
 a {
   font-weight: 500;
-  color: $dark-grey;
+  color: $white;
   text-decoration: inherit;
 
   &:hover {
-    color: $primary-blue;
+    color: $black;
   }
 }
 
 //button elements - Base styles
 button {
-  background: linear-gradient(135deg, $primary-blue, $light-primary-blue);
+  background: linear-gradient(135deg, $deep-blue, $gold);
   color: $white;
   border-radius: 8px;
   border: 1px solid transparent;
@@ -101,7 +101,7 @@ button {
   &:hover {
     transform: translateY(-1px);
     box-shadow: $shadow-medium;
-    border-color: $primary-blue;
+    border-color: $deep-blue;
   }
 
   &:active {
@@ -115,7 +115,7 @@ button {
 
   &:disabled {
     background: $light-grey;
-    color: $medium-grey;
+    color: $deep-blue;
     cursor: not-allowed;
     transform: none;
     box-shadow: none;
@@ -145,8 +145,8 @@ button {
 
   &:focus {
     outline: none;
-    border-color: $primary-blue;
-    box-shadow: 0 0 0 3px rgba($primary-blue, 0.1);
+    border-color: $deep-blue;
+    box-shadow: 0 0 0 3px rgba($deep-blue, 0.1);
   }
 
   &.error {
