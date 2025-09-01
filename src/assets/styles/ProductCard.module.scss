@@ -13,6 +13,7 @@
   border: 3px solid $gold;
   width: 400px;
   height: 560px;
+  min-height: fit-content;
   color: $black;
 
   &Image {
@@ -68,35 +69,35 @@
   margin-right: 2px;
 
   &.filled {
-    fill: $gold;
+    fill: $dark-gold;
   }
 
   &.empty {
     fill: none;
   }
 
-  stroke: $gold;
+  stroke: $dark-gold;
   stroke-width: 1.5;
 }
 
 .expandButton {
   background: none;
   border: none;
-  color: $gold;
+  color: $dark-gold;
   font-family: $font-body;
   font-size: 0.9em;
   cursor: pointer;
   gap: $spacing-xsm;
   text-decoration: underline;
   transition: color $transition-fast;
-  align-self: flex-start;
+  align-self: center;
 
   &:hover {
     color: $black;
   }
 
   &:focus-visible {
-    outline: 2px solid $gold;
+    outline: 2px solid $dark-gold;
     outline-offset: 2px;
   }
 }

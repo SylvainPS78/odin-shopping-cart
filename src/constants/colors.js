@@ -5,6 +5,7 @@
 // Colors - Primary Palette
 export const DEEP_BLUE = "#234e70";
 export const GOLD = "#f7c873";
+export const DARK_GOLD = "#d4a853";
 
 // Colors - Accent Palette
 export const ACCENT_RED = "#e94560";

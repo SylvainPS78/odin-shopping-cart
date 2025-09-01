@@ -22,6 +22,8 @@
   border: 3px solid #f7c873;
   width: 400px;
   height: 560px;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
   color: #000000;
 }
 .productCardImage {
@@ -67,11 +69,11 @@
 
 .starIcon {
   margin-right: 2px;
-  stroke: #f7c873;
+  stroke: #d4a853;
   stroke-width: 1.5;
 }
 .starIcon.filled {
-  fill: #f7c873;
+  fill: #d4a853;
 }
 .starIcon.empty {
   fill: none;
@@ -80,19 +82,19 @@
 .expandButton {
   background: none;
   border: none;
-  color: #f7c873;
+  color: #d4a853;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 0.9em;
   cursor: pointer;
   gap: 0.5rem;
   text-decoration: underline;
   transition: color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  align-self: flex-start;
+  align-self: center;
 }
 .expandButton:hover {
   color: #000000;
 }
 .expandButton:focus-visible {
-  outline: 2px solid #f7c873;
+  outline: 2px solid #d4a853;
   outline-offset: 2px;
 }/*# sourceMappingURL=ProductCard.module.css.map */
