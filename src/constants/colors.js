@@ -19,8 +19,8 @@ export const LIGHT_GREY = "#f2f2f2";
 export const COLORS = {
   DEEP_BLUE,
   GOLD,
+  DARK_GOLD,
   ACCENT_RED,
-
   WHITE,
   BLACK,
   LIGHT_GREY,
