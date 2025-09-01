@@ -1,16 +1,23 @@
 @font-face {
   font-family: "Montserrat";
   src: url("../font/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 100 900;
   font-style: normal;
 }
 @font-face {
   font-family: "Rubik";
   src: url("../font/Rubik/Rubik-VariableFont_wght.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 100 900;
   font-style: normal;
 }
 .main {
   width: 100%;
   min-height: 100%;
+}
+
+.productsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
 }/*# sourceMappingURL=ProductPage.module.css.map */

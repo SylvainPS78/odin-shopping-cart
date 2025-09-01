@@ -1,0 +1,43 @@
+@use "variables" as *;
+@use "fonts";
+
+.productCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: $white;
+  border-radius: $container-radius;
+  padding: $spacing-xsm;
+  gap: $spacing-xsm;
+  border: 3px solid $gold;
+  width: 400px;
+  height: 560px;
+  color: $black;
+
+  &Image {
+    height: 40%;
+    width: auto;
+  }
+
+  &Title {
+    font-family: $font-sub-title;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &Description {
+    font-family: $font-body;
+    text-align: justify;
+  }
+
+  &Price {
+    font-family: $font-sub-title;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &RatingContainer {
+    display: flex;
+  }
+}

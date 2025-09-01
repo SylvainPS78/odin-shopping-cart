@@ -3,6 +3,7 @@ import App from "./App.jsx";
 import HomePage from "./assets/components/HomePage.jsx";
 import AboutPage from "./assets/components/AboutPage.jsx";
 import ProductPage from "./assets/components/ProductPage.jsx";
+import PageTransition from "./assets/components/PageTransition.jsx";
 // import CartPage from "./assets/components/CartPage.jsx";
 
 const router = createBrowserRouter([
@@ -12,11 +13,19 @@ const router = createBrowserRouter([
     children: [
       {
         path: "",
-        element: <HomePage />,
+        element: (
+          <PageTransition>
+            <HomePage />
+          </PageTransition>
+        ),
       },
       {
         path: "about",
-        element: <AboutPage />,
+        element: (
+          <PageTransition>
+            <AboutPage />
+          </PageTransition>
+        ),
       },
       {
         path: "products",

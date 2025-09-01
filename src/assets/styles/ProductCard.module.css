@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../font/Rubik/Rubik-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+.productCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 0.5rem;
+  gap: 0.5rem;
+  border: 3px solid #f7c873;
+  width: 400px;
+  height: 560px;
+  color: #000000;
+}
+.productCardImage {
+  height: 40%;
+  width: auto;
+}
+.productCardTitle {
+  font-family: "Rubik", Arial, sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+.productCardDescription {
+  font-family: "Open Sans", Arial, sans-serif;
+  text-align: justify;
+}
+.productCardPrice {
+  font-family: "Rubik", Arial, sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+.productCardRatingContainer {
+  display: flex;
+}/*# sourceMappingURL=ProductCard.module.css.map */

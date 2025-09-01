@@ -5,3 +5,10 @@
   width: 100%;
   min-height: 100%;
 }
+
+.productsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-xsm;
+  justify-content: center;
+}
