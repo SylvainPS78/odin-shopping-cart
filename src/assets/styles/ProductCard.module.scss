@@ -29,6 +29,26 @@
   &Description {
     font-family: $font-body;
     text-align: justify;
+    transition: all $transition-normal;
+
+    &.collapsed {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    &.expanded {
+      display: block;
+    }
+  }
+
+  &DescriptionContainer {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-xsm;
+    width: 100%;
   }
 
   &Price {
@@ -39,5 +59,44 @@
 
   &RatingContainer {
     display: flex;
+    align-items: center;
+    gap: $spacing-xsm;
+  }
+}
+
+.starIcon {
+  margin-right: 2px;
+
+  &.filled {
+    fill: $gold;
+  }
+
+  &.empty {
+    fill: none;
+  }
+
+  stroke: $gold;
+  stroke-width: 1.5;
+}
+
+.expandButton {
+  background: none;
+  border: none;
+  color: $gold;
+  font-family: $font-body;
+  font-size: 0.9em;
+  cursor: pointer;
+  gap: $spacing-xsm;
+  text-decoration: underline;
+  transition: color $transition-fast;
+  align-self: flex-start;
+
+  &:hover {
+    color: $black;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $gold;
+    outline-offset: 2px;
   }
 }

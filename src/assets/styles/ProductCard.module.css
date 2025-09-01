@@ -36,6 +36,23 @@
 .productCardDescription {
   font-family: "Open Sans", Arial, sans-serif;
   text-align: justify;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.productCardDescription.collapsed {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.productCardDescription.expanded {
+  display: block;
+}
+.productCardDescriptionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
 }
 .productCardPrice {
   font-family: "Rubik", Arial, sans-serif;
@@ -44,4 +61,38 @@
 }
 .productCardRatingContainer {
   display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.starIcon {
+  margin-right: 2px;
+  stroke: #f7c873;
+  stroke-width: 1.5;
+}
+.starIcon.filled {
+  fill: #f7c873;
+}
+.starIcon.empty {
+  fill: none;
+}
+
+.expandButton {
+  background: none;
+  border: none;
+  color: #f7c873;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 0.9em;
+  cursor: pointer;
+  gap: 0.5rem;
+  text-decoration: underline;
+  transition: color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  align-self: flex-start;
+}
+.expandButton:hover {
+  color: #000000;
+}
+.expandButton:focus-visible {
+  outline: 2px solid #f7c873;
+  outline-offset: 2px;
 }/*# sourceMappingURL=ProductCard.module.css.map */
