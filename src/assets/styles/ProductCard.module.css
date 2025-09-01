@@ -128,7 +128,15 @@
 .decreaseButton {
   border-right: none;
 }
+.decreaseButton:focus {
+  border-right: 2px solid #d4a853;
+  outline: 2px solid #d4a853;
+}
 
 .increaseButton {
   border-left: none;
+}
+.increaseButton:focus {
+  border-left: 2px solid #d4a853;
+  outline: 2px solid #d4a853;
 }/*# sourceMappingURL=ProductCard.module.css.map */

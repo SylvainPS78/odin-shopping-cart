@@ -131,8 +131,16 @@
 
 .decreaseButton {
   border-right: none;
+  &:focus {
+    border-right: 2px solid $dark-gold;
+    outline: 2px solid $dark-gold;
+  }
 }
 
 .increaseButton {
   border-left: none;
+  &:focus {
+    border-left: 2px solid $dark-gold;
+    outline: 2px solid $dark-gold;
+  }
 }
