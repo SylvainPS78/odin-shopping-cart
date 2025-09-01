@@ -74,7 +74,7 @@ const ProductCard = ({
             <path d="M200-440v-80h560v80H200Z" />
           </svg>
         </button>
-        <input></input>
+        <input className={styles.quantityInput} placeholder="1"></input>
         <button
           type="button"
           className={styles.increaseButton}

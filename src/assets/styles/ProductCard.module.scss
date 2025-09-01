@@ -101,3 +101,38 @@
     outline-offset: 2px;
   }
 }
+
+.quantityContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.quantityInput {
+  border: 2px solid $dark-gold;
+  text-align: center;
+  color: $dark-gold;
+  border-radius: none;
+  width: 50%;
+
+  &:focus {
+    outline: 2px solid $dark-gold;
+  }
+}
+
+.decreaseButton,
+.increaseButton {
+  background: none;
+  border: 2px solid $dark-gold;
+
+  &:focus {
+    outline: 2px solid $dark-gold;
+  }
+}
+
+.decreaseButton {
+  border-right: none;
+}
+
+.increaseButton {
+  border-left: none;
+}
