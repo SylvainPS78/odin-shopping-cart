@@ -1,23 +1,13 @@
-import { useState, useEffect } from "react";
 import styles from "../styles/ProductPage.module.scss";
-import { fetchProducts } from "../services/api.js";
 import ProductCard from "./ProductCard.jsx";
+import useProducts from "../../hooks/useProducts.js";
 
 const ProductPage = () => {
-  const [productsList, setProductsList] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const { productsList, loading, error } = useProducts();
 
-  useEffect(() => {
-    fetchProducts()
-      .then(setProductsList)
-      .catch(console.error)
-      .finally(() => setLoading(false));
-  }, []);
-
-  useEffect(() => {
-    // to delete
-    console.log(productsList);
-  }, [productsList]);
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error loading products: {error.message}</p>;
+  if (!productsList) return <p>No products found</p>;
 
   return (
     <main className={styles.main} aria-label="Product page main content">
