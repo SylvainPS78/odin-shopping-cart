@@ -5,7 +5,7 @@ import useProducts from "../../hooks/useProducts.js";
 const ProductPage = () => {
   const { productsList, loading, error } = useProducts();
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <p className={styles.loadingMessage}>Loading...</p>;
   if (error) return <p>Error loading products: {error.message}</p>;
   if (!productsList) return <p>No products found</p>;
 

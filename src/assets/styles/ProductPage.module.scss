@@ -12,3 +12,12 @@
   gap: $spacing-sm;
   justify-content: center;
 }
+
+.loadingMessage {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 20vh;
+  font-family: $font-title;
+  font-size: $font-size-medium;
+}

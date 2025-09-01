@@ -14,7 +14,6 @@ const useProducts = () => {
         const products = await fetchProducts();
         setProductsList(products);
       } catch (err) {
-        console.error(err);
         setError(err);
       } finally {
         setLoading(false);
