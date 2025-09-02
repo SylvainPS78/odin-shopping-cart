@@ -1,6 +1,10 @@
 import { useState } from "react";
 import styles from "../styles/ProductCard.module.scss";
 import { DARK_GOLD } from "../../constants/colors.js";
+import { useContext } from "react";
+import { CartContext } from "../../contexts/CartContext.js";
+
+const { addToCart } = useContext(CartContext);
 
 const ProductCard = ({
   // key,

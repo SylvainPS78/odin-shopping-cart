@@ -1,6 +1,10 @@
 import logoHeader from "../img/Logo_header.png";
 import styles from "../styles/Header.module.scss";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { CartContext } from "../../contexts/CartContext.js";
+
+const { cartItems } = useContext(CartContext);
 
 const Header = () => {
   return (
