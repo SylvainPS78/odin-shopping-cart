@@ -4,9 +4,8 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { CartContext } from "../../contexts/CartContext.js";
 
-const { cartItems } = useContext(CartContext);
-
 const Header = () => {
+  const { cartItems } = useContext(CartContext);
   return (
     <header className={styles.header} aria-label="Site Header">
       {" "}

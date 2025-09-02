@@ -4,21 +4,20 @@ import { DARK_GOLD } from "../../constants/colors.js";
 import { useContext } from "react";
 import { CartContext } from "../../contexts/CartContext.js";
 
-const { addToCart } = useContext(CartContext);
-
 const ProductCard = ({
-  // key,
-  // id,
+  key,
+  id,
   image,
   title,
   description,
   price,
   ratingCount,
   ratingRate,
-  //  category,
+  category,
 }) => {
   const [isDescriptionExpanded, setIsDescriptionExpanded] = useState(false);
   const stars = Array.from({ length: 5 }, (_, i) => i < Math.round(ratingRate));
+  const { addToCart } = useContext(CartContext);
 
   return (
     <div className={styles.productCard}>

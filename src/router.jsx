@@ -4,7 +4,7 @@ import HomePage from "./assets/components/HomePage.jsx";
 import AboutPage from "./assets/components/AboutPage.jsx";
 import ProductPage from "./assets/components/ProductPage.jsx";
 import PageTransition from "./assets/components/PageTransition.jsx";
-// import CartPage from "./assets/components/CartPage.jsx";
+import CartPage from "./assets/components/CartPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -31,10 +31,10 @@ const router = createBrowserRouter([
         path: "products",
         element: <ProductPage />,
       },
-      /* {
+      {
         path: "cart",
         element: <CartPage />,
-      },*/
+      },
     ],
   },
 ]);
