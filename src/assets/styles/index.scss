@@ -156,12 +156,12 @@ footer {
   color: $light-grey;
   text-align: center;
   position: fixed;
-  bottom: 1vh;
+  bottom: 1dvh;
   left: 0;
   width: 100%;
   font-family: $font-body;
   font-size: $font-size-small;
-  max-height: 6vh;
+  max-height: 6dvh;
   z-index: $z-index-footer;
 
   // @media (max-width: px) {}
