@@ -1,6 +1,10 @@
 @use "variables" as *;
 @use "fonts";
 
+button {
+  cursor: pointer;
+}
+
 .productCard {
   display: flex;
   flex-direction: column;
@@ -12,12 +16,12 @@
   gap: $spacing-xsm;
   border: 3px solid $gold;
   width: 400px;
-  height: 560px;
+  height: 500px;
   min-height: fit-content;
   color: $black;
 
   &Image {
-    height: 40%;
+    height: 30%;
     width: auto;
   }
 
@@ -86,7 +90,6 @@
   color: $dark-gold;
   font-family: $font-body;
   font-size: 0.9em;
-  cursor: pointer;
   gap: $spacing-xsm;
   text-decoration: underline;
   transition: color $transition-fast;
@@ -142,5 +145,20 @@
   &:focus {
     border-left: 2px solid $dark-gold;
     outline: 2px solid $dark-gold;
+  }
+}
+
+.addButton {
+  background-color: $dark-gold;
+  color: $black;
+  border: none;
+  border-radius: $input-radius;
+  padding: $spacing-xsm $spacing-sm;
+  font-family: $font-sub-title;
+  font-weight: 500;
+  transition: box-shadow $transition-normal;
+
+  &:hover {
+    box-shadow: 0 6px 12px $dark-gold;
   }
 }

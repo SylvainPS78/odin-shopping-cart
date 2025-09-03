@@ -96,6 +96,7 @@ const ProductCard = ({
           </svg>
         </button>
       </div>
+      <button className={styles.addButton}>Add to cart</button>
     </div>
   );
 };
