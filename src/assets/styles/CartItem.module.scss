@@ -1,0 +1,121 @@
+@use "variables" as *;
+@use "fonts";
+
+.cartItem {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "image title title title"
+    "image quantity price remove";
+  gap: $spacing-sm;
+  align-items: center;
+  padding: $spacing-sm;
+  border: 2px solid $dark-gold;
+  border-radius: $input-radius;
+  background-color: $white;
+  color: $black;
+  height: 20dvh;
+  min-height: fit-content;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.cartItemImage {
+  grid-area: image;
+  width: auto;
+  height: 80%;
+  object-fit: contain;
+  justify-self: center;
+  align-self: center;
+}
+
+.cartItemTitle {
+  grid-area: title;
+  font-family: $font-title;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+}
+
+.cartItemPrice {
+  grid-area: price;
+  font-family: $font-sub-title;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+}
+
+.quantityContainer {
+  grid-area: quantity;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.quantityInput {
+  width: 50px;
+  height: 36px;
+  min-width: 0;
+  text-align: center;
+  border: 2px solid $dark-gold;
+  color: $dark-gold;
+  border-radius: none;
+  box-sizing: border-box;
+
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+.decreaseButton,
+.increaseButton {
+  height: 36px;
+  flex-shrink: 0;
+  background: none;
+  border: 2px solid $dark-gold;
+  padding: 0;
+  min-width: 30px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:focus {
+    outline: 2px solid $dark-gold;
+  }
+}
+
+.decreaseButton {
+  border-right: none;
+}
+
+.increaseButton {
+  border-left: none;
+}
+
+.removeButton {
+  grid-area: remove;
+  background-color: $accent-red;
+  color: $black;
+  border: none;
+  border-radius: $input-radius;
+  padding: $spacing-xsm $spacing-xsm;
+  font-family: $font-sub-title;
+  max-width: 8dvh;
+  align-self: center;
+  justify-self: center;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 4px 8px rgba($dark-gold, 0.3);
+  }
+}

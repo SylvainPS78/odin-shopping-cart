@@ -1,0 +1,29 @@
+@use "variables" as *;
+@use "fonts";
+
+.userCart {
+  width: 60dvw;
+  padding: 0 $spacing-md 0 $spacing-md;
+}
+
+.pageTitle {
+  display: flex;
+  justify-content: space-between;
+  width: 60dvw;
+  padding: 0 2 * $spacing-lg $spacing-sm 2 * $spacing-lg;
+  font-family: $font-title;
+  font-size: $font-size-medium;
+  font-weight: 700;
+}
+
+.paiementSection {
+  padding: $spacing-sm;
+  border: 2px solid $dark-gold;
+  border-radius: $input-radius;
+  background-color: $white;
+  color: $black;
+  width: 35dvw;
+  position: fixed;
+  top: 20dvh;
+  right: 5dvw;
+}

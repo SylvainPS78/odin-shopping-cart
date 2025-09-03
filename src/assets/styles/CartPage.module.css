@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../font/Rubik/Rubik-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+.userCart {
+  width: 60dvw;
+  padding: 0 2rem 0 2rem;
+}
+
+.pageTitle {
+  display: flex;
+  justify-content: space-between;
+  width: 60dvw;
+  padding: 0 8rem 1rem 8rem;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: clamp(16px, 2vw + 0.5rem, 25px);
+  font-weight: 700;
+}
+
+.paiementSection {
+  padding: 1rem;
+  border: 2px solid #d4a853;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #000000;
+  width: 35dvw;
+  position: fixed;
+  top: 20dvh;
+  right: 5dvw;
+}/*# sourceMappingURL=CartPage.module.css.map */

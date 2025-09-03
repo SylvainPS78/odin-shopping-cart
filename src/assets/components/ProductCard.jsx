@@ -5,8 +5,9 @@ import { useContext } from "react";
 import { CartContext } from "../../contexts/CartContext.js";
 
 const ProductCard = ({ product }) => {
-  const { id, image, title, price, description, ratingCount, ratingRate } =
-    product;
+  const { id, image, title, price, description, rating } = product;
+  const ratingCount = rating.count;
+  const ratingRate = rating.rate;
 
   const [isDescriptionExpanded, setIsDescriptionExpanded] = useState(false);
   const stars = Array.from({ length: 5 }, (_, i) => i < Math.round(ratingRate));

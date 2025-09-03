@@ -13,11 +13,7 @@ const ProductPage = () => {
     <main className={styles.main} aria-label="Product page main content">
       <div className={styles.productsContainer}>
         {productsList.map((product) => (
-          <ProductCard
-            key={product.id}
-            product={product}
-            // onCardSelected={handleCardSelected} TO BE MODIFIED
-          />
+          <ProductCard key={product.id} product={product} />
         ))}
       </div>
     </main>

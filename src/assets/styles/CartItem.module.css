@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../font/Rubik/Rubik-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+.cartItem {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "image title title title" "image quantity price remove";
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+  border: 2px solid #d4a853;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #000000;
+  height: 20dvh;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.cartItemImage {
+  grid-area: image;
+  width: auto;
+  height: 80%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  justify-self: center;
+  align-self: center;
+}
+
+.cartItemTitle {
+  grid-area: title;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+}
+
+.cartItemPrice {
+  grid-area: price;
+  font-family: "Rubik", Arial, sans-serif;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+}
+
+.quantityContainer {
+  grid-area: quantity;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.quantityInput {
+  width: 50px;
+  height: 36px;
+  min-width: 0;
+  text-align: center;
+  border: 2px solid #d4a853;
+  color: #d4a853;
+  border-radius: none;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+}
+.quantityInput::-webkit-outer-spin-button, .quantityInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.decreaseButton,
+.increaseButton {
+  height: 36px;
+  flex-shrink: 0;
+  background: none;
+  border: 2px solid #d4a853;
+  padding: 0;
+  min-width: 30px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.decreaseButton:focus,
+.increaseButton:focus {
+  outline: 2px solid #d4a853;
+}
+
+.decreaseButton {
+  border-right: none;
+}
+
+.increaseButton {
+  border-left: none;
+}
+
+.removeButton {
+  grid-area: remove;
+  background-color: #e94560;
+  color: #000000;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem 0.5rem;
+  font-family: "Rubik", Arial, sans-serif;
+  max-width: 8dvh;
+  align-self: center;
+  justify-self: center;
+  cursor: pointer;
+}
+.removeButton:hover {
+  box-shadow: 0 4px 8px rgba(212, 168, 83, 0.3);
+}/*# sourceMappingURL=CartItem.module.css.map */
