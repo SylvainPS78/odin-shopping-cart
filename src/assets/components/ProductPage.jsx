@@ -15,14 +15,7 @@ const ProductPage = () => {
         {productsList.map((product) => (
           <ProductCard
             key={product.id}
-            id={product.id}
-            image={product.image}
-            title={product.title}
-            description={product.description}
-            price={product.price}
-            ratingCount={product.rating.count}
-            ratingRate={product.rating.rate}
-            category={product.category}
+            product={product}
             // onCardSelected={handleCardSelected} TO BE MODIFIED
           />
         ))}

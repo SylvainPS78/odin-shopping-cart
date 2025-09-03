@@ -1,23 +1,22 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import styles from "../styles/ProductCard.module.scss";
 import { DARK_GOLD } from "../../constants/colors.js";
 import { useContext } from "react";
 import { CartContext } from "../../contexts/CartContext.js";
 
-const ProductCard = ({
-  key,
-  id,
-  image,
-  title,
-  description,
-  price,
-  ratingCount,
-  ratingRate,
-  category,
-}) => {
+const ProductCard = ({ product }) => {
+  const { id, image, title, price, description, ratingCount, ratingRate } =
+    product;
+
   const [isDescriptionExpanded, setIsDescriptionExpanded] = useState(false);
   const stars = Array.from({ length: 5 }, (_, i) => i < Math.round(ratingRate));
   const { addToCart } = useContext(CartContext);
+  const quantityInputRef = useRef(null);
+
+  const handleAddToCart = () => {
+    const quantity = parseInt(quantityInputRef.current.value);
+    addToCart(product, quantity);
+  };
 
   return (
     <div className={styles.productCard}>
@@ -77,7 +76,11 @@ const ProductCard = ({
             <path d="M200-440v-80h560v80H200Z" />
           </svg>
         </button>
-        <input className={styles.quantityInput} defaultValue={1}></input>
+        <input
+          ref={quantityInputRef}
+          className={styles.quantityInput}
+          defaultValue={1}
+        ></input>
         <button
           type="button"
           className={styles.increaseButton}
@@ -96,7 +99,9 @@ const ProductCard = ({
           </svg>
         </button>
       </div>
-      <button className={styles.addButton}>Add to cart</button>
+      <button className={styles.addButton} onClick={handleAddToCart}>
+        Add to cart
+      </button>
     </div>
   );
 };
