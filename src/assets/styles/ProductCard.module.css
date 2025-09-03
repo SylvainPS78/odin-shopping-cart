@@ -113,6 +113,12 @@ button {
   color: #d4a853;
   border-radius: none;
   width: 50%;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+}
+.quantityInput::-webkit-outer-spin-button, .quantityInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 .quantityInput:focus {
   outline: 2px solid #d4a853;

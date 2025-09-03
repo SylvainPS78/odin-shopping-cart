@@ -18,6 +18,20 @@ const ProductCard = ({ product }) => {
     addToCart(product, quantity);
   };
 
+  const handleDecreaseQuantity = () => {
+    const currentValue = parseInt(quantityInputRef.current.value);
+    if (currentValue <= 1) {
+      return;
+    } else {
+      quantityInputRef.current.value = currentValue - 1;
+    }
+  };
+
+  const handleIncreaseQuantity = () => {
+    const currentValue = parseInt(quantityInputRef.current.value);
+    quantityInputRef.current.value = currentValue + 1;
+  };
+
   return (
     <div className={styles.productCard}>
       <img className={styles.productCardImage} src={image} alt={title} />
@@ -63,6 +77,7 @@ const ProductCard = ({ product }) => {
           type="button"
           className={styles.decreaseButton}
           aria-label="Decrease quantity"
+          onClick={handleDecreaseQuantity}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -80,11 +95,13 @@ const ProductCard = ({ product }) => {
           ref={quantityInputRef}
           className={styles.quantityInput}
           defaultValue={1}
+          type="number"
         ></input>
         <button
           type="button"
           className={styles.increaseButton}
           aria-label="Increase quantity"
+          onClick={handleIncreaseQuantity}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

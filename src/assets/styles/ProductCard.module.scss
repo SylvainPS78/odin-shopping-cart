@@ -116,6 +116,14 @@ button {
   color: $dark-gold;
   border-radius: none;
   width: 50%;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 
   &:focus {
     outline: 2px solid $dark-gold;
