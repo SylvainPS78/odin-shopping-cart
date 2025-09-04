@@ -8,8 +8,10 @@ const CartPage = () => {
   return (
     <>
       <div className={styles.pageTitle}>
-        <span>Your Shopping Cart</span>
-        <span>{cartItems.length} items</span>
+        <span>
+          Your Shopping Cart {cartItems.length === 0 ? "is empty" : ""}
+        </span>
+        <span>{cartItems.length === 0 ? "" : `${cartItems.length} items`}</span>
       </div>
       <div className={styles.userCart}>
         {" "}

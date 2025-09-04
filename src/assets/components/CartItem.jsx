@@ -34,7 +34,7 @@ const cartItem = ({ product }) => {
     <div className={styles.cartItem}>
       <img className={styles.cartItemImage} src={image} alt={title} />
       <p className={styles.cartItemTitle}>{title}</p>
-      <p className={styles.cartItemPrice}>$ {price}</p>
+      <p className={styles.cartItemPrice}>$ {quantity * price}</p>
 
       <div className={styles.quantityContainer}>
         <button
