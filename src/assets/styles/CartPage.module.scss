@@ -26,4 +26,31 @@
   position: fixed;
   top: 20dvh;
   right: 5dvw;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-lg;
+}
+
+.totalPrice {
+  display: flex;
+  justify-content: space-between;
+  font-family: $font-sub-title;
+  font-size: $font-size-medium;
+  font-weight: 700;
+}
+
+.payButton {
+  background-color: $dark-gold;
+  color: $black;
+  border: none;
+  border-radius: $input-radius;
+  padding: $spacing-xsm $spacing-sm;
+  font-family: $font-sub-title;
+  font-weight: 500;
+  font-size: $font-size-medium;
+  transition: box-shadow $transition-normal;
+
+  &:hover {
+    box-shadow: 0 6px 12px $dark-gold;
+  }
 }

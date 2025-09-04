@@ -35,4 +35,30 @@
   position: fixed;
   top: 20dvh;
   right: 5dvw;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.totalPrice {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Rubik", Arial, sans-serif;
+  font-size: clamp(16px, 2vw + 0.5rem, 25px);
+  font-weight: 700;
+}
+
+.payButton {
+  background-color: #d4a853;
+  color: #000000;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  font-family: "Rubik", Arial, sans-serif;
+  font-weight: 500;
+  font-size: clamp(16px, 2vw + 0.5rem, 25px);
+  transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.payButton:hover {
+  box-shadow: 0 6px 12px #d4a853;
 }/*# sourceMappingURL=CartPage.module.css.map */
